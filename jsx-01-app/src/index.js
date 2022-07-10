@@ -1,14 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
+import { HelloWorld } from "./HelloWorld" 
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-const hello = "Hello World";
+const helloWorldElement = <HelloWorld />;
+const root = document.getElementById("root");
 
 
-
-root.render(
-    <React.StrictMode>
-      <h1>{hello}</h1>
-    </React.StrictMode>
-  );
-
+ReactDOM.render(helloWorldElement, root)
